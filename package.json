@@ -1,6 +1,6 @@
 {
   "name": "react-render-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny wrapper around React.createElement with support for dumb components and null.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
