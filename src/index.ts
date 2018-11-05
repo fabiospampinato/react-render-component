@@ -1,7 +1,8 @@
 
 /* IMPORT */
 
-import * as _ from 'lodash';
+import isString = require ( 'lodash/isString' );
+import isFunction = require ( 'lodash/isFunction' );
 import * as React from 'react';
 
 /* REACT RENDER COMPONENT */
@@ -9,7 +10,7 @@ import * as React from 'react';
 //TODO: Add some tests
 
 function reactRenderComponent ( type: Function | string | null, props?: object, ...children ) {
-  return _.isString ( type ) || _.isFunction ( type ) ? React.createElement ( type as any, props, ...children ) : type;
+  return isString ( type ) || isFunction ( type ) ? React.createElement ( type as any, props, ...children ) : type;
 }
 
 /* EXPORT */
