@@ -15,4 +15,4 @@ function reactRenderComponent ( type: Function | string | null, props?: object, 
 
 /* EXPORT */
 
-export = Object.assign ( reactRenderComponent, { default: reactRenderComponent } );
+export default reactRenderComponent;
